@@ -1,0 +1,32 @@
+{
+  "name": "eslint-no-restricted-imports-ts-plugin",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/AkisArou/eslint-no-restricted-imports-ts-plugin.git",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "author": "AkisArou <akisarou90@gmail.com>",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.16",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/type-utils": "^5.58.0",
+    "@typescript-eslint/utils": "^5.58.0",
+    "eslint": "~8.15.0",
+    "prettier": "^2.6.2",
+    "webpack": "*"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "jsonc-parser": "^3.2.0"
+  }
+}
